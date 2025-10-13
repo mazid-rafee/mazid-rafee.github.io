@@ -155,3 +155,129 @@ body.light {
   --muted: #666;
   --card: #fff;
 }
+
+/* ===== Resume Sections (Experience, Publications, Projects, etc.) ===== */
+
+section {
+  max-width: 1000px;
+  margin: 4em auto;
+  padding: 0 2em;
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: var(--accent);
+  margin-bottom: 0.8em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.2em;
+}
+
+/* Experience Items */
+.experience-item {
+  background: var(--card);
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.experience-item h3 {
+  margin-top: 0;
+  color: var(--fg);
+  font-weight: 600;
+}
+.duration {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+}
+.experience-item ul {
+  list-style: disc inside;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Publications & Projects */
+#publications ul, #projects ul, #awards ul, #certificates ul {
+  list-style: disc inside;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-left: 0.5em;
+}
+#publications li b, #projects li b {
+  color: var(--fg);
+}
+#publications li:not(:last-child),
+#projects li:not(:last-child) {
+  margin-bottom: 0.7em;
+}
+
+/* Technical Skills Section */
+#skills .two-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+#skills .col {
+  background: var(--card);
+  padding: 1.5em;
+  border-radius: 10px;
+  flex: 1 1 45%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#skills .col h3 {
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.5em;
+  color: var(--fg);
+}
+#skills .col p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Awards / Certificates */
+#awards li, #certificates li {
+  background: var(--card);
+  margin-bottom: 0.6em;
+  padding: 0.8em 1em;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+#awards li:hover, #certificates li:hover {
+  background: #343941;
+}
+
+/* Light Mode Tweaks */
+body.light .experience-item,
+body.light #skills .col,
+body.light #awards li,
+body.light #certificates li {
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+body.light section h2 {
+  color: var(--accent);
+}
+body.light #publications li b,
+body.light #projects li b {
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 0 1em;
+  }
+  #skills .two-col {
+    flex-direction: column;
+  }
+  .experience-item {
+    padding: 1em;
+  }
+}
