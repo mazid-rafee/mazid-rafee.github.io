@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Abdullah Al Mazid - Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Abdullah Al Mazid</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <img src="headshot.jpg" alt="Md Abdullah Al Mazid" class="profile-pic">
-    <h1>Md Abdullah Al Mazid</h1>
-    <p>Miami, Florida | <a href="mailto:mazid.rafee@gmail.com">mazid.rafee@gmail.com</a> | (786) 257-7354</p>
-    <div class="links">
-      <a href="https://linkedin.com/in/mazidrafee" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/mazid-rafee" target="_blank">GitHub</a> |
-      <a href="https://scholar.google.com/citations?user=WSFAoawAAAAJ&hl=en" target="_blank">Google Scholar</a>
+  <nav class="navbar">
+    <div class="logo">Mazid</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Resume.pdf" target="_blank">CV</a></li>
+    </ul>
+    <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <section class="intro" id="about">
+    <div class="left">
+      <img src="headshot.jpg" alt="Md Abdullah Al Mazid" class="profile-pic">
+      <h1>Md Abdullah Al Mazid</h1>
+      <p class="subtitle">PhD Student • Florida International University</p>
+      <p class="subtitle2">Graduate Assistant • HPDRC Lab</p>
+      <div class="icons">
+        <a href="mailto:mazid.rafee@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/mazid-rafee" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/mazidrafee" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=WSFAoawAAAAJ&hl=en" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+      </div>
     </div>
-    <div class="resume-btn">
-      <a href="resume.pdf" target="_blank">📄 Download Resume (PDF)</a>
+
+    <div class="right">
+      <h2>Biography</h2>
+      <p class="highlight">
+        I am a Ph.D. candidate at Florida International University, conducting research on environmental data analytics,
+        machine learning, and water quality forecasting at HPDRC under Dr. Naphtali Rishe.
+      </p>
+      <p>
+        My research focuses on developing deep learning frameworks for environmental sensing and irregular time-series forecasting.
+        I integrate LSTM/BiLSTM and ODE models for spatio-temporal prediction. I am also experienced in data engineering,
+        database systems, and large-scale data pipelines.
+      </p>
+      <p>
+        Previously, I worked as a Senior Software Engineer at Enosis Solutions, leading backend development for large SaaS
+        healthcare applications.
+      </p>
+
+      <a href="Resume.pdf" target="_blank" class="resume-link">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+
+      <div class="two-col">
+        <div class="col">
+          <h3>Interests</h3>
+          <ul>
+            <li>Environmental AI</li>
+            <li>Deep Learning</li>
+            <li>Water Quality Forecasting</li>
+            <li>Irregular Time-Series Modeling</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Education</h3>
+          <p><b>Ph.D.</b> in Computer Science<br>Florida International University (2022–Present)</p>
+          <p><b>M.Sc.</b> in Computer Science<br>Florida International University (Expected 2025)</p>
+          <p><b>B.Sc.</b> in Computer Science<br>BRAC University, Bangladesh (2019)</p>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <section>
-    <h2>Research and Work Experience</h2>
-    <h3>Research Assistant, FIU HPDRC Lab – Miami, FL <span>Aug 2022 – Present</span></h3>
-    <ul>
-      <li>Collaborating under Dr. Naphtali Rishe in developing data management, AI integration, and visualization tools for environmental datasets funded by FDEP and NSF.</li>
-      <li>Conducting PhD research on deep learning for spatial-temporal environmental data analysis.</li>
-    </ul>
-
-    <h3>Senior Software Engineer, Enosis Solutions – Dhaka, Bangladesh <span>Jun 2019 – Aug 2022</span></h3>
-    <ul>
-      <li>Led product development for <b>Denticon</b>, a major US dental SaaS by Planet DDS.</li>
-      <li>Modernized legacy systems, optimized SQL queries, and managed a development sub-team.</li>
-    </ul>
-
-    <h3>Software Engineer Intern, mPower Social Enterprises – Dhaka, Bangladesh <span>May 2019 – Jun 2019</span></h3>
-    <ul>
-      <li>Developed Django-based software solutions for social enterprise applications.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><b>Ph.D. in Computer Science</b> – Florida International University (2022 – Present)</p>
-    <p><b>B.Sc. in Computer Science</b> – Khulna University of Engineering and Technology (2014 – 2019)</p>
-  </section>
-
-  <section>
-    <h2>Research & Publications</h2>
-    <ul>
-      <li><b>MSCloudCAM (2025)</b> – Deep Cross Attention Network for multispectral cloud segmentation (Target: ICLR 2026)</li>
-      <li><b>Look, Attend, and Rank (2025)</b> – Language-guided saliency ranking framework (Submitted to AAAI 2026)</li>
-      <li><b>Addressing Irregularities... (2024)</b> – Published in IEEE</li>
-      <li><b>Climate Change Myths Detection (2022)</b> – Published in ACM</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><b>BBROIPS:</b> Visualization and AI-driven analysis for environmental data (FIU, NSF, FDEP)</li>
-      <li><b>Denticon:</b> SaaS for dental practices, including portals and imaging systems</li>
-      <li><b>Quizify:</b> AI-based quiz generator web app (<a href="https://github.com/mazid-rafee/Quizify">GitHub</a>)</li>
-      <li><b>NachOS Analysis:</b> Operating systems architecture project (<a href="https://github.com/mazid-rafee/nachos-COP-5614-FIU">GitHub</a>)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Technical Skills</h2>
-    <p><b>Languages:</b> Python, C++, C#, SQL</p>
-    <p><b>Technologies:</b> .NET, MS SQL Server, TensorFlow, Keras, NumPy, Docker, Django</p>
-    <p><b>Version Control:</b> Git, TFS</p>
-  </section>
-
-  <section>
-    <h2>Extracurricular Activities</h2>
-    <ul>
-      <li>ShellHacks Hackathon (2022, 2023, 2024)</li>
-      <li>National & International Programming Contests (2015–2016)</li>
-      <li>Competitive Programming (Codeforces Max Rating: 1405)</li>
-    </ul>
   </section>
 
   <footer>
-    <p>© 2025 Md Abdullah Al Mazid | <a href="mailto:mazid.rafee@gmail.com">Contact Me</a></p>
+    <p>© 2025 Md Abdullah Al Mazid</p>
   </footer>
 </body>
 </html>
