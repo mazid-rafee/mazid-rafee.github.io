@@ -1,73 +1,100 @@
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #222;
-    line-height: 1.6;
-    background: #f9fafb;
-  }
-  
-  header {
-    text-align: center;
-    background: #00539C;
-    color: white;
-    padding: 2em 1em;
-  }
-  
-  header h1 {
-    margin-bottom: 0.3em;
-  }
-  
-  header a {
-    color: #e0f2ff;
-    text-decoration: none;
-  }
-  
-  header a:hover {
-    text-decoration: underline;
-  }
-  
-  section {
-    max-width: 900px;
-    margin: 2em auto;
-    padding: 0 1em;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #00539C;
-    padding-bottom: 0.3em;
-    color: #00539C;
-  }
-  
-  h3 {
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-  }
-  
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+  background: #f9fafb;
+}
+
+header {
+  text-align: center;
+  background: #00539C;
+  color: white;
+  padding: 2.5em 1em 1.5em;
+}
+
+header h1 {
+  margin: 0.5em 0 0.3em;
+}
+
+header a {
+  color: #e0f2ff;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0f2ff;
+  margin-bottom: 0.5em;
+}
+
+.resume-btn {
+  margin-top: 1em;
+}
+
+.resume-btn a {
+  display: inline-block;
+  background: white;
+  color: #00539C;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.resume-btn a:hover {
+  background: #e0f2ff;
+}
+
+section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+h2 {
+  border-bottom: 2px solid #00539C;
+  padding-bottom: 0.3em;
+  color: #00539C;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+h3 span {
+  float: right;
+  font-weight: normal;
+  color: #555;
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+}
+
+footer {
+  text-align: center;
+  background: #00539C;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@media (max-width: 600px) {
   h3 span {
-    float: right;
-    font-weight: normal;
-    color: #555;
+    display: block;
+    float: none;
+    margin-top: 0.3em;
   }
-  
-  ul {
-    margin-top: 0.5em;
-    margin-left: 1.5em;
-  }
-  
-  footer {
-    text-align: center;
-    background: #00539C;
-    color: white;
-    padding: 1em;
-    margin-top: 2em;
-  }
-  
-  @media (max-width: 600px) {
-    h3 span {
-      display: block;
-      float: none;
-      margin-top: 0.3em;
-    }
-  }
-  
+}
