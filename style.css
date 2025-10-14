@@ -263,6 +263,41 @@ body.light #projects li b {
   color: #000;
 }
 
+.contact-section {
+  background-color: #1c1f28; /* similar to your site’s footer background */
+  color: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #f5f5f5;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #3b82f6; /* subtle blue line like your titles */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 15px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #f5f5f5;
+}
+
 @media (max-width: 768px) {
   section {
     padding: 0 1em;
@@ -272,5 +307,11 @@ body.light #projects li b {
   }
   .experience-item {
     padding: 1em;
+  }
+  .contact-section {
+    padding: 60px 20px;
+  }
+  .contact-item {
+    font-size: 1rem;
   }
 }
