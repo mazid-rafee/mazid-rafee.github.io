@@ -7,7 +7,7 @@
 }
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: Consolas, "Courier New", monospace;
   background: var(--bg);
   color: var(--fg);
   transition: background 0.3s, color 0.3s;
@@ -78,7 +78,7 @@ h1 {
 }
 .icons a {
   color: var(--accent);
-  margin: 0.4em;
+  margin: 0.3em;
   font-size: 1.4em;
   text-decoration: none;
 }
@@ -137,6 +137,13 @@ h2 {
 .col p {
   line-height: 1.5;
   color: var(--muted);
+  
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 footer {
