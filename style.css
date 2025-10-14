@@ -13,7 +13,6 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,17 +48,15 @@ body {
   cursor: pointer;
 }
 
-/* Layout */
 .intro {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 4em auto;
   padding: 0 2em;
   gap: 2em;
 }
 
-/* Left */
 .left {
   flex: 1 1 300px;
   text-align: center;
@@ -89,7 +86,6 @@ h1 {
   color: white;
 }
 
-/* Right */
 .right {
   flex: 2 1 500px;
 }
@@ -121,9 +117,14 @@ h2 {
   flex-wrap: wrap;
   margin-top: 2em;
 }
-.col {
+.col-35 {
+  flex: 1 1 35%;
+}
+
+.col-45 {
   flex: 1 1 45%;
 }
+
 .col h3 {
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.3em;
@@ -138,7 +139,6 @@ h2 {
   color: var(--muted);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 2em 0;
@@ -147,7 +147,6 @@ footer {
   margin-top: 3em;
 }
 
-/* Light mode */
 body.light {
   --bg: #f7f8fa;
   --fg: #222;
@@ -156,12 +155,11 @@ body.light {
   --card: #fff;
 }
 
-/* ===== Resume Sections (Experience, Publications, Projects, etc.) ===== */
-
 section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 4em auto;
   padding: 0 2em;
+  scroll-margin-top: 100px;
 }
 
 section h2 {
@@ -172,7 +170,6 @@ section h2 {
   padding-bottom: 0.2em;
 }
 
-/* Experience Items */
 .experience-item {
   background: var(--card);
   padding: 1.5em;
@@ -201,8 +198,7 @@ section h2 {
   line-height: 1.6;
 }
 
-/* Publications & Projects */
-#publications ul, #projects ul, #awards ul, #certificates ul {
+#publications ul, #projects ul, #extracurricular ul, #certifications ul {
   list-style: disc inside;
   color: var(--muted);
   line-height: 1.7;
@@ -216,7 +212,6 @@ section h2 {
   margin-bottom: 0.7em;
 }
 
-/* Technical Skills Section */
 #skills .two-col {
   display: flex;
   flex-wrap: wrap;
@@ -241,23 +236,22 @@ section h2 {
   line-height: 1.6;
 }
 
-/* Awards / Certificates */
-#awards li, #certificates li {
+#extracurricular li, #certifications li {
   background: var(--card);
   margin-bottom: 0.6em;
   padding: 0.8em 1em;
   border-radius: 6px;
   transition: background 0.2s ease;
 }
-#awards li:hover, #certificates li:hover {
+#extracurricular li:hover, #certifications li:hover {
   background: #343941;
 }
 
-/* Light Mode Tweaks */
+
 body.light .experience-item,
 body.light #skills .col,
-body.light #awards li,
-body.light #certificates li {
+body.light #extracurricular li,
+body.light #certifications li {
   background: var(--card);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -269,7 +263,6 @@ body.light #projects li b {
   color: #000;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   section {
     padding: 0 1em;
