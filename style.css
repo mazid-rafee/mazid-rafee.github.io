@@ -76,6 +76,10 @@ h1 {
   color: var(--muted);
   margin: 0.2em 0;
 }
+
+.icons {
+  margin: 1em;
+}
 .icons a {
   color: var(--accent);
   margin: 0.3em;
