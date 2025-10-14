@@ -13,6 +13,13 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
+.left-margin-zero {
+  padding-inline-start: 15px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
