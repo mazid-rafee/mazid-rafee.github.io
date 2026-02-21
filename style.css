@@ -5,9 +5,13 @@
   --muted: #8b949e;
   --card: #2a2f38;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Consolas, "Courier New", monospace;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--fg);
   transition: background 0.3s, color 0.3s;
@@ -46,6 +50,10 @@ ul {
 }
 .nav-links a:hover {
   color: var(--accent);
+}
+.nav-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 #theme-toggle {
   background: none;
@@ -95,6 +103,14 @@ h1 {
 }
 .icons a:hover {
   color: white;
+}
+.icons a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.resume-link:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
 }
 
 .right {
